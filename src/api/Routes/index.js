@@ -1,9 +1,9 @@
 const bodyParser = require('body-parser');
-const route = require('./teste')
+const usuarios = require('./usuariosRoutes');
 
 module.exports = app => {
         app.use(
                 bodyParser.json(),
-                route
+                usuarios
         )
 }
